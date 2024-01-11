@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpkg.InformationController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="596.0" prefWidth="730.0">
+         <children>
+            <TableView fx:id="companyTableColumn" layoutX="26.0" layoutY="154.0" prefHeight="383.0" prefWidth="678.0">
+               <columns>
+                  <TableColumn fx:id="toyotaTableColumn" prefWidth="144.800048828125" text="Toyota" />
+                  <TableColumn fx:id="companytnameTableColumn" prefWidth="512.7999267578125" text="Company" />
+               </columns>
+            </TableView>
+            <Label layoutX="209.0" layoutY="14.0" text="ABOUT  TOYOTA BANGLADESH">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="620.0" layoutY="547.0" mnemonicParsing="false" onAction="#prevSceneAction" prefHeight="35.0" prefWidth="96.0" text="Prev Scene" />
+            <TextArea layoutX="28.0" layoutY="45.0" prefHeight="94.0" prefWidth="678.0" text="Toyota Bangladesh is the exclusive distributor of brand new Toyota vehicles. Since 1964, Navana Limited &#10;embarked on a journey with Toyota to ensure utmost customer satisfaction. Toyota Bangladesh is &#10;synonymous with Quality, Durability, and Reliability.">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

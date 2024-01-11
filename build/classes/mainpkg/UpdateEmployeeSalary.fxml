@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UpdateEmployeeSalaryController">
+   <children>
+      <Label alignment="CENTER" layoutX="153.0" layoutY="14.0" prefHeight="17.0" prefWidth="279.0" text="Salary">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="33.0" layoutY="81.0" onMouseClicked="#nameOnMouseClick" promptText="Name" />
+      <TextField fx:id="branchTextField" layoutX="207.0" layoutY="81.0" onMouseClicked="#branchOnMouseClick" promptText="Branch" />
+      <TextField fx:id="salaryTextField" layoutX="33.0" layoutY="125.0" onMouseClicked="#salaryOnMouseClick" prefHeight="25.0" prefWidth="149.0" promptText="Salary" />
+      <TextField fx:id="divisionTextField" layoutX="396.0" layoutY="81.0" onMouseClicked="#divisionOnMouseClick" promptText="Division" />
+      <DatePicker fx:id="dojDatePicker" layoutX="396.0" layoutY="125.0" onMouseClicked="#dojOnMouseclick" promptText="Date of Payment" />
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="243.0" prefHeight="200.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="employeeNameColumn" prefWidth="100.6666259765625" text="Employee Name" />
+          <TableColumn fx:id="branchColumn" prefWidth="79.33332061767578" text="Branch" />
+            <TableColumn fx:id="divisionColumn" prefWidth="91.33332824707031" text="Division" />
+            <TableColumn fx:id="salaryColumn" prefWidth="113.33331298828125" text="Salary" />
+            <TableColumn fx:id="monthColumn" prefWidth="106.6666259765625" text="Month" />
+            <TableColumn fx:id="dateoOfJoiningcolumn" prefWidth="197.99996948242188" text="Date Of Payment" />
+        </columns>
+      </TableView>
+      <Button layoutX="33.0" layoutY="189.0" mnemonicParsing="false" onAction="#addRecordOnClick" prefHeight="25.0" prefWidth="149.0" text="Add to list" />
+      <Button layoutX="218.0" layoutY="189.0" mnemonicParsing="false" onAction="#deleteRecordOnClick" prefHeight="25.0" prefWidth="149.0" text="Delete from list" />
+      <TextField fx:id="monthTextField" layoutX="207.0" layoutY="125.0" onMouseClicked="#monthOnMouseClick" promptText="Month" />
+      <Button fx:id="goBackBtn" layoutX="595.0" layoutY="458.0" mnemonicParsing="false" onAction="#goBackBtnOnClick" text="Go Back" />
+   </children>
+</AnchorPane>

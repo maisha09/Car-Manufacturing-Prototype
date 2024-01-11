@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpkg.TAKATARECALLController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="394.0" prefWidth="612.0">
+               <children>
+                  <TextField fx:id="vinid" layoutX="150.0" layoutY="136.0" prefHeight="25.0" prefWidth="164.0" promptText="Enter Your VIN/Chassis No." />
+                  <Label layoutX="66.0" layoutY="138.0" text="VIN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="170.0" text="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailid" layoutX="150.0" layoutY="168.0" prefHeight="25.0" prefWidth="164.0" promptText="Enter Your Email" />
+                  <Label layoutX="65.0" layoutY="204.0" text="Phone">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneid" layoutX="150.0" layoutY="202.0" prefHeight="25.0" prefWidth="164.0" promptText="Enter Your Phone No." />
+                  <Button fx:id="checkvehicleid" layoutX="65.0" layoutY="284.0" mnemonicParsing="false" onAction="#checkVehicleAction" prefHeight="36.0" prefWidth="164.0" text="CHECK MY VEHICLE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="384.0" layoutY="284.0" mnemonicParsing="false" onAction="#prevSceneButtonAction" prefHeight="36.0" prefWidth="164.0" text="Prev Scene">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpkg.JoinLiveSessionController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="687.0">
+               <children>
+                  <Label layoutX="270.0" layoutY="30.0" text="Join Live To Get Discount" textFill="#2f2a2a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Prev Scene">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="42.0" layoutY="94.0" text="Live Info:" textFill="#282626">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="151.0" text="Live Date:" textFill="#2f2b2b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="liveDateTextField" layoutX="209.0" layoutY="148.0" prefHeight="26.0" prefWidth="437.0" />
+                  <Label layoutX="42.0" layoutY="250.0" text="Live Time:" textFill="#2c2727">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="liveTimeTextField" layoutX="210.0" layoutY="247.0" prefHeight="26.0" prefWidth="437.0" />
+                  <Label layoutX="39.0" layoutY="302.0" text="Live Location:" textFill="#2c2929">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="liveLocationTextField" layoutX="212.0" layoutY="299.0" prefHeight="26.0" prefWidth="437.0" />
+                  <Label layoutX="42.0" layoutY="197.0" text="Live Type:" textFill="#221f1f">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="liveTypeTextField" layoutX="209.0" layoutY="194.0" prefHeight="26.0" prefWidth="438.0" />
+                  <Label layoutX="38.0" layoutY="356.0" text="Live Link:" textFill="#1e1919">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="liveLinkTextField" layoutX="211.0" layoutY="353.0" prefHeight="26.0" prefWidth="437.0" />
+                  <Label layoutX="39.0" layoutY="403.0" text="Set by:" textFill="#282525">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="setByTextField" layoutX="212.0" layoutY="400.0" prefHeight="26.0" prefWidth="437.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

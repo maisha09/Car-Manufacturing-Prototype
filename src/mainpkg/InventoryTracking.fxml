@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpkg.InventoryTrackingController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="765.0">
+         <children>
+            <Label layoutX="201.0" layoutY="14.0" opacity="0.7" prefHeight="54.0" prefWidth="316.0" text="Inventory Tracking" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <HBox layoutY="68.0" prefHeight="506.0" prefWidth="765.0">
+               <children>
+                  <VBox prefHeight="506.0" prefWidth="316.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="260.0" text="Corolla">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="CorollaPDF" prefHeight="416.0" prefWidth="252.0" text="The Toyota Corolla is a series of compact cars manufactured and marketed globally by the Japanese automaker Toyota Motor Corporation. Introduced in 1966, the Corolla was the best-selling car worldwide by 1974 and has been one of the best-selling cars in the world since then.&#10;&#10;The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual &amp; Automatic transmission. Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl &amp; Ground clearance of Corolla is 170 mm.&#10;&#10;For the most reliable Toyota Corolla year in this generation, we have to go with the 2019 model year. The 2019 Toyota Corolla is one of the best compact sedans you can buy. Thanks to its wealth of standard driver-assistance features, spacious rear seats, and value-oriented pricing.&#10;" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#CorollaGenaratePDF" prefHeight="33.0" prefWidth="254.0" text="Genarate PDF">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="506.0" prefWidth="321.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="266.0" text="Camry">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="CamryPDF" prefHeight="417.0" prefWidth="257.0" text="The Toyota Corolla is a series of compact cars manufactured and marketed globally by the Japanese automaker Toyota Motor Corporation. Introduced in 1966, the Corolla was the best-selling car worldwide by 1974 and has been one of the best-selling cars in the world since then.&#10;&#10;The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual &amp; Automatic transmission. Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl &amp; Ground clearance of Corolla is 170 mm.&#10;&#10;For the most reliable Toyota Corolla year in this generation, we have to go with the 2019 model year. The 2019 Toyota Corolla is one of the best compact sedans you can buy. Thanks to its wealth of standard driver-assistance features, spacious rear seats, and value-oriented pricing.&#10;" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#CamryGenaratePDF" prefHeight="35.0" prefWidth="257.0" text="Genarate PDF">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="506.0" prefWidth="320.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="238.0" text="Fortuner">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="FortunerPDF" prefHeight="414.0" prefWidth="256.0" text="The Toyota Corolla is a series of compact cars manufactured and marketed globally by the Japanese automaker Toyota Motor Corporation. Introduced in 1966, the Corolla was the best-selling car worldwide by 1974 and has been one of the best-selling cars in the world since then.&#10;&#10;The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual &amp; Automatic transmission. Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl &amp; Ground clearance of Corolla is 170 mm.&#10;&#10;For the most reliable Toyota Corolla year in this generation, we have to go with the 2019 model year. The 2019 Toyota Corolla is one of the best compact sedans you can buy. Thanks to its wealth of standard driver-assistance features, spacious rear seats, and value-oriented pricing.&#10;" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#FortunerGenaratePDF" prefHeight="33.0" prefWidth="257.0" text="Genarate PDF">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button layoutX="699.0" layoutY="562.0" mnemonicParsing="false" onAction="#InventoryBack" prefHeight="15.0" prefWidth="52.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

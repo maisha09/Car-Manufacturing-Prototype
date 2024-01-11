@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.BalanceSheetsController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="25.0" prefWidth="239.0" text="Balance Sheets">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="92.0" text="Name of Branch:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="136.0" text="Division:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="180.0" text="Total Sales for the month of:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="192.0" />
+      <Button fx:id="goBackBtn" layoutX="508.0" layoutY="352.0" mnemonicParsing="false" onAction="#goBackBtnOnClick" text="Go Back" />
+      <TextField fx:id="branchTextField" layoutX="249.0" layoutY="91.0" />
+      <TextField fx:id="divisionTextField" layoutX="184.0" layoutY="136.0" />
+      <TextField fx:id="totalSalesTextField" layoutX="346.0" layoutY="179.0" />
+      <Button fx:id="saveBtn" layoutX="391.0" layoutY="352.0" mnemonicParsing="false" onAction="#saveBtnOnClick" text="Save" />
+   </children>
+</AnchorPane>

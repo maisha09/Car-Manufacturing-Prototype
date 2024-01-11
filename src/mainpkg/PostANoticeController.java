@@ -1,0 +1,64 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mainpkg;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+/**
+ * FXML Controller class
+ *
+ * @author User
+ */
+public class PostANoticeController implements Initializable {
+
+    @FXML
+    private TextField PostANoticeText;
+
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+
+    @FXML
+    private void PostTheNotice(ActionEvent event) throws IOException {
+        StringBuilder sb = new StringBuilder();
+        sb.append(PostANoticeText.getText().toString());
+        
+        File file = new File("C:\\Users\\Koushik Dewri\\Documents\\NetBeansProjects\\Department Head\\posts.txt");
+        FileWriter W = new FileWriter(file);
+        W.write(sb.toString());
+        W.close();
+    }
+
+    @FXML
+    private void PostANoticeBack(ActionEvent event) throws IOException {
+        Parent myparent = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        Scene myscene = new Scene(myparent);
+        Stage mywindow = (Stage)((Node)event.getSource()).getScene().getWindow(); //not for new window
+//        Stage mywindow = new Stage(); // for new window
+        
+        mywindow.setTitle("Dashboard"); //SET TITLE FOR NEXT PAGE HERE!!!!!!!
+        mywindow.setScene(myscene);
+        mywindow.show();
+    }
+    
+}

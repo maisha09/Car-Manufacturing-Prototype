@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="28.0" prefHeight="46.0" prefWidth="461.0" style="-fx-background-color: white;" text="Toyota-A car manufacturing company">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="225.0" layoutY="90.0" onAction="#idfieldOnActn" promptText="Enter Your ID" />
+      <ComboBox fx:id="type" layoutX="225.0" layoutY="187.0" prefWidth="150.0" promptText="Select Your Type" />
+      <Button fx:id="loginButton" layoutX="221.0" layoutY="242.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="25.0" prefWidth="158.0" text="Login" />
+      <Label fx:id="incorrect" layoutX="144.0" layoutY="322.0" prefHeight="17.0" prefWidth="293.0" />
+      <PasswordField fx:id="passField" layoutX="225.0" layoutY="139.0" onAction="#passfieldOnActn" />
+   </children>
+</AnchorPane>

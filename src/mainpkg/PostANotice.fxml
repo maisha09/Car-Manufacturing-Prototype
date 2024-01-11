@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpkg.PostANoticeController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="631.0" prefWidth="781.0">
+         <children>
+            <Label alignment="CENTER" layoutX="227.0" layoutY="25.0" opacity="0.7" prefHeight="54.0" prefWidth="327.0" text="Post A Notice" wrapText="true">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="PostANoticeText" alignment="TOP_LEFT" layoutX="85.0" layoutY="98.0" prefHeight="296.0" prefWidth="611.0" />
+            <Button layoutX="85.0" layoutY="447.0" mnemonicParsing="false" onAction="#PostTheNotice" prefHeight="38.0" prefWidth="143.0" text="Post The Notice" />
+            <Button layoutX="553.0" layoutY="453.0" mnemonicParsing="false" onAction="#PostANoticeBack" prefHeight="38.0" prefWidth="143.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

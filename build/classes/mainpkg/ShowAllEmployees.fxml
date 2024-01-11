@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpkg.ShowAllEmployeesController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="623.0" prefWidth="854.0">
+         <children>
+            <Button layoutX="77.0" layoutY="505.0" mnemonicParsing="false" onAction="#ShowAllEmployeesBack" prefHeight="35.0" prefWidth="152.0" text="Back" />
+            <Label layoutX="211.0" layoutY="23.0" opacity="0.7" prefHeight="35.0" prefWidth="340.0" text="Show All Employees">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
